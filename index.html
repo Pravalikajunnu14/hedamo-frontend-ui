@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hedamo – Product Disclosures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Product Disclosures</h1>
+    <p class="subtitle">
+      This interface presents producer-declared information. Hedamo does not verify, certify, or approve disclosures.
+    </p>
+  </header>
+
+  <section class="controls">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by product or producer"
+    >
+
+    <select id="statusFilter">
+      <option value="">All Statuses</option>
+      <option value="Draft">Draft</option>
+      <option value="Submitted">Submitted</option>
+      <option value="Published">Published</option>
+    </select>
+  </section>
+
+  <section id="productList" class="list"></section>
+
+  <section id="productDetail" class="detail hidden"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
